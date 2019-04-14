@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/article_container">
+
+
+    <ImageView
+        android:id="@+id/image_news"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_margin="10dp"
+        android:scaleType="fitXY"
+        android:fitsSystemWindows="true"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+
+        <TextView
+            android:id="@+id/text_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="TextView"
+            android:textAppearance="@style/textListHeader" />
+
+        <TextView
+            android:id="@+id/text_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="7dp"
+            android:layout_weight="1"
+            android:maxLines="2"
+            android:text="svggg"
+            android:textAppearance="@style/textListBody1"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            android:layout_marginBottom="7dp"
+            android:gravity="right|center"
+            >
+
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@android:drawable/ic_menu_my_calendar"
+                android:layout_marginRight="7dp"/>
+
+            <TextView
+                android:id="@+id/text_issued"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textAppearance="@style/textListBody2"
+                android:layout_marginRight="7dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

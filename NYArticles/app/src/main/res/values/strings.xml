@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">NYArticles</string>
+    <string name="apiKey">aKKmFPCObLu9yxYcBgUl8zUEZjGcBqJ3</string>
+    <string name="appTitle">NY Times Most Popular</string>
+</resources>
